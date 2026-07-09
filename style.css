@@ -1,0 +1,305 @@
+/* reset style */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* common button style */
+.common-btn{
+    background-color: #FD6E0A;
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.outline-btn{
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: orangered;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+margin: auto;
+}
+
+header{
+
+}
+nav{
+        display: flex;
+justify-content: space-between;
+
+padding: 12px 0;
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo-z{
+    color: #FD6E0A;
+}
+ul{
+     display: flex;
+justify-content: space-between;
+list-style: none;
+gap: 10px;
+align-items: center;
+}
+nav ul a{text-decoration: none;}
+
+/* hero section style */
+.hero-parent-root{
+background-color: rgb(253, 248, 242);
+
+}
+.hero-parent{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.hero-left-p1 {
+font-size: 28px;
+font-weight: 700px;
+}
+.hero-left h2 {
+font-weight: bold;
+font-size: 40px;
+margin-bottom: 12px;
+}
+
+.hero-left-button-parent{
+    margin-top: 12px;
+}
+.about-parent{
+background-color: rgb(253, 248, 242);
+margin: 70px auto;
+border-radius: 10px;
+padding: 75px;
+text-align: center;
+}
+.about-parent p{
+    margin: 20px 0;
+   
+}
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.about-box-parent .box{
+    background-color: rgba(255, 255, 232, 0.845);
+    padding: 5px;
+    border-radius: 5px;
+}
+.what-i-do-parent{
+    margin: 60px auto;
+    text-align: center;
+}
+.what-i-do-card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-card-container .what-i-do-card{
+    border: 2px solid orangered;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+.what-i-do-card-container .what-i-do-card h2{
+    margin: 10px 0;
+}
+.what-i-do-card-container .what-i-do-card p{
+color: gray;
+font-size: 15px;
+}
+
+
+
+
+/* Base styles - Adjust fonts to match your global setup */
+.resume-summary-section {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1140px;
+    margin: 80px auto;
+    padding: 0 20px;
+    color: #474747;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    color: #181818;
+    margin-bottom: 50px;
+}
+
+/* Two column structure */
+.resume-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.resume-column {
+    flex: 1;
+}
+
+.column-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+/* Individual entries */
+.resume-item {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Removes the bottom border line on the last item of each column */
+.resume-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #474747;
+    margin: 0 0 8px 0;
+}
+
+.item-subheading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+    margin: 0 0 15px 0;
+}
+
+.item-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #757575;
+    margin: 0;
+}
+
+/* Download Button Styling */
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff6c00;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #e05f00;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+}
+.my-amazing-parent{
+text-align: center;
+
+}
+.gallary{
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 250px;
+grid-template-areas:
+"one two three" 
+"four two six" 
+"four five six"
+
+}
+.gallary img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+    grid-area: six;
+}
+/* footer */
+footer{
+    text-align: center;
+   margin-top: 70px !important;
+   display: flex;
+   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 15px;
+background-color: rgb(253, 248, 242);
+padding: 20px;
+border-radius: 10px;
+}
+footer form{
+    padding: 20px;
+}
+footer-left p{
+    margin: 10px 0;
+}
+footer form input, footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
